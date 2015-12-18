@@ -1,0 +1,103 @@
+@import 'base';
+@import 'vendor/normalize';
+
+html,
+body {
+  background-color: white;
+  color: hsla(0, 0%, 60%, 1);
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-weight: normal;
+  text-align: left;
+}
+
+button {
+  background-color: #d9534f;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-color: #d9534f;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 5px;
+  padding: 6px 12px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+button:hover {
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+
+section {
+  box-sizing: content-box;
+  height: 30rem;
+  margin: 5rem auto;
+  width: 30rem;
+}
+
+section > div {
+  border: 1px solid hsla(240, 50%, 90%, 1);
+  box-sizing: border-box;
+  float: left;
+  font-size: 9rem;
+  font-weight: bold;
+  height: 10rem;
+  line-height: 9rem;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  width: 10rem;
+}
+
+section.won > div.x,
+section.won > div.o {
+  color: hsla(0, 0%, 90%, 1)
+}
+
+section > div.x,
+section.won > div.x.win {
+  color: hsla(0, 80%, 50%, 1);
+}
+
+section > div.o,
+section.won > div.o.win  {
+  color: hsla(120, 80%, 50%, 1);
+}
+
+section > div:nth-child(1),
+section > div:nth-child(2),
+section > div:nth-child(3) {
+  border-top-color: white;
+}
+
+section > div:nth-child(3),
+section > div:nth-child(6),
+section > div:nth-child(9) {
+  border-right-color: white;
+}
+
+section > div:nth-child(7),
+section > div:nth-child(8),
+section > div:nth-child(9) {
+  border-bottom-color: white;
+}
+
+section > div:nth-child(1),
+section > div:nth-child(4),
+section > div:nth-child(7) {
+  border-left-color: white;
+}
