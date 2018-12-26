@@ -1,5 +1,7 @@
 # Tic Tac Starter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/chasm/tic-tac-routes.svg)](https://greenkeeper.io/)
+
 Tic Tac Toe built from the [react-redux-starter-kit](https://github.com/davezuko/react-redux-starter-kit).
 
 Once we've downloaded the starter kit, the first thing we'll do is restore our ESLint settings so that we can copy code across from our previous [Tic Tac Toe version](https://github.com/chasm/tic-tac-pack):
